@@ -1,0 +1,23 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+We want to use remote repository when we want to share our code. Using remote repository, several people from all around the world can collaborate on one project. 
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+If we have made changes to a local repository that might conflict with the remote repository, then, in that case, manual pulling changes is better. Also, if there are changes in the remote repository, then, we want to be aware of all changes before merging it with the local repository.
+
+Describe the differences between forks, clones, and branches.  When would you use one instead of another?
+
+Branches are used to create the branch for an experimental feature inside the repository. They operate on single repository only. Clones are used to clone the remote or local repository. It creates the clone of the required repository. Forks operate on the remote repository. Forks are used to clone the repository but it is mentioned where we have made our fork from and thus giving credit to the original owner.  
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+By having a copy of the last known state of the remote stored locally, we can know what changes have been made after we cloned remote. So we can fetch and merge those changes into origin/master and then merge with local if required. Also, resolve conflicts if there are any.
+
+How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
+
+We can use transfer file over the network. But in this process, we would not know the original owner of file and changes made by multiple people cannot be merged easily. Also suggesting code changes e.g. similar to pull requests is not easy. This can lead a lot of inconsistency and other problems.
+
+When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
+
+Making changes in separate branch makes sure we keep original code intact and do not break it. We can test many different things on a separate branch without breaking the master. Working directly on a master is risky when the project is big and there are many collaborators. 
